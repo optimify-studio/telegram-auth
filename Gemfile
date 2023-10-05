@@ -8,5 +8,5 @@ platforms :jruby do
 end
 
 platforms :ruby do
-  gem "openssl", "~> 2.2.0"
+  gem "openssl", "~> 3.0.2"
 end
