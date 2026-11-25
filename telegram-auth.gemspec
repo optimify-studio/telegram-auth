@@ -23,11 +23,10 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.4.0"
 
+  # On MRI openssl is a default gem, so the version bundled with Ruby is used
   case RUBY_PLATFORM
   when /java/
     spec.add_runtime_dependency("jruby-openssl", ["~> 0.10.5"])
     spec.platform      = Gem::Platform::local
-  else
-    spec.add_runtime_dependency("openssl", ["~> 3.0.2"])
   end
 end
